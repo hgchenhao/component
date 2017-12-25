@@ -10,7 +10,7 @@ export default {
   data () {
     return {
       total:13,
-      currentIndex:3,
+      currentIndex:1,
       listLen:5
     }
   },
