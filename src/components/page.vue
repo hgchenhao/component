@@ -109,7 +109,7 @@ export default {
       this.page = this.listLen
       this.merchant =  this.total / this.page
       this.Remainder =  this.total % this.page
-      if (this.merchant <= 1) {  //总页数小于或等于5页
+      if (this.merchant <= 1) {  //总页数小于或等于page页
         for (let k = 1; k <= this.total; k++) {
           this.arr.push(k);
         }
