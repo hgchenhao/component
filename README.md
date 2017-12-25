@@ -6,7 +6,7 @@
 > import Page from './page.vue' 
 从目录引入该文件,在父组件注册使用
 ``` 
-> <page :total='total' :current-index="currentIndex" :listLen='listLen' @getPage='getPage'></page>
+<page :total='total' :current-index="currentIndex" :listLen='listLen' @getPage='getPage'></page>
 total：总页码
 currentIndex：当前页码
 listLen：页面ui要显示几个列表页
@@ -17,11 +17,11 @@ getPage： page组件把每个事件的页码发送给父组件，用来向后�
 ``` 
  <ul class="item" v-show="arr.length">
        <li @click="start">首页</li>
-       <li @click="pre"><a href="javascript:;"><<</a></li>    //上一列表页
-       <li @click="currentPre"><a href="javascript:;"><</a></li>     //点解当前列表页上一页
+       <li @click="pre"><a href="javascript:;"><<</a></li>    上一列表页
+       <li @click="currentPre"><a href="javascript:;"><</a></li>     点解当前列表页上一页
        <li v-for="(item,index) in arr" :class="{active: item===num}" @click="getPage(item)">{{item}}</li>
-       <li @click="currentNext"><a href="javascript:;">></a></li>    //点解当前列表页下一页
-       <li @click="next"><a href="javascript:;">>></a></li>    //下一列表页
+       <li @click="currentNext"><a href="javascript:;">></a></li>    点解当前列表页下一页
+       <li @click="next"><a href="javascript:;">>></a></li>    下一列表页
        <li @click="end">尾页</li>
    </ul>
 ```    
@@ -53,7 +53,7 @@ getPage： page组件把每个事件的页码发送给父组件，用来向后�
     }
   },
 methods 里面的相关事件，思路主要是判断当前列表页的第一项和最后一项.通过循环来该变arr成员的值  
-``` bash
+ bash
 # install dependencies
 npm install
 
