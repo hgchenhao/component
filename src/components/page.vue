@@ -71,7 +71,7 @@ export default {
       }
       if (this.Remainder === 0) {   //是否整除
         for (let i = this.page; i > 0; i--) {
-          temp.push(last - i);
+          temp.push(lastIndex - i);
         }
         this.arr = temp;
         [this.num]=this.arr
