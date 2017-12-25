@@ -5,13 +5,16 @@
 
 > import Page from './page.vue' 
 从目录引入该文件,在父组件注册使用
+``` 
 > <page :total='total' :current-index="currentIndex" :listLen='listLen' @getPage='getPage'></page>
 total：总页码
 currentIndex：当前页码
 listLen：页面ui要显示几个列表页
 getPage： page组件把每个事件的页码发送给父组件，用来向后台发送相关请求来展示内容
+``` 
 ## about page.vue
->html 部分
+### html 部分
+``` 
  <ul class="item" v-show="arr.length">
        <li @click="start">首页</li>
        <li @click="pre"><a href="javascript:;"><<</a></li>    //上一列表页
@@ -21,8 +24,9 @@ getPage： page组件把每个事件的页码发送给父组件，用来向后�
        <li @click="next"><a href="javascript:;">>></a></li>    //下一列表页
        <li @click="end">尾页</li>
    </ul>
- >相关数据说明
- data() {
+```    
+### 相关数据说明
+ ``` data() {
     return {
       num: Number, //表示当前页码高亮
       arr: [], //页面显示的数组
@@ -65,7 +69,7 @@ npm run build
 之前用ember.js写过一个类似组件，现在基于vue2.0封装一个，方便以后用于不同项目，可以拿来直接使用
 小总结：之前也接触过ng4,发现这种相似框架排除过渡动画，页面展示都是通过后台发过来或者前端模拟的数据来
 渲染页面，当然这只是相通的一小部分，也是这类框架基本思想，相比于ng4感觉vue2.0更加轻量，api更加简洁，社区比较广泛
-而ng4是一个很完整的框架，我们能想到的和想不到的谷歌基本都帮我们想好了,涉及到的东西太多了,=,=之前一个装饰器都弄半天...
+而ng4是一个很完整的框架，我们能想到的和想不到的谷歌基本都帮我们想好了,涉及到的东西太多了
 
 
 
