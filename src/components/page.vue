@@ -53,7 +53,11 @@ export default {
     //点击首页
     start() {
       let [firstIndex]=this.arr;
+<<<<<<< HEAD
       if (firstIndex === 1) {   
+=======
+      if (firstIndex === 1) {
+>>>>>>> 7525e3261caa78da60cb8b4034a79e9114cbc16f
         alert("已经是第一个列表了");
         return;
       }
