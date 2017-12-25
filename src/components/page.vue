@@ -53,8 +53,7 @@ export default {
     //点击首页
     start() {
       let [firstIndex]=this.arr;
-      if (firstIndex === 1) {
-         this.num=1
+      if (firstIndex === 1) {   
         alert("已经是第一个列表了");
         return;
       }
