@@ -54,7 +54,6 @@ export default {
     start() {
       let [firstIndex]=this.arr;
       if (firstIndex === 1) {
-         this.num=1
         alert("已经是第一个列表了");
         return;
       }
